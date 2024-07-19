@@ -9,6 +9,8 @@ Esse sistema tem o intuito cadastrar e listar vendas, mas caso a venda possua um
 - DESCONTO: O desconto pode ser um campo numérico livre.
 - DESCONTO MÁXIMO PERMITIDO: Esse valor é condicionado ao tipo de prazo. Caso seja **PADRÃO**, o desconto máximo é o maior valor entre `VALOR DO FRETE` e `5% DA SOMA DOS PRODUTOS`. Caso seja **TURBO**, o desconto máximo é o maior valor entre `VALOR DO FRETE` e `10% DA SOMA DOS PRODUTOS`. Por fim, caso seja **SUPER TURBO**, o desconto máximo é o maior valor entre `VALOR DO FRETE` e `20% DA SOMA DOS PRODUTOS`.
 
+Para cadastrar uma venda, é necessário informar quais produtos foram negociados. Para tanto, o repositório possui um arquivo (___produtosCaseSB.js___) que disponibiliza um array de objetos que representam nossos produtos! Você notará que, para cada produto, existe o `PRECO_CHEIO` e `PRECO_DESCONTADO`. O preço cheio é cobrado quando a forma de pagamento é via cartão de crédito, enquanto o preço descontado é cobrado para os pagamentos em pix e boleto.
+
 ## Requisitos:
 
 ### 1. Login e cadastro:
